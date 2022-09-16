@@ -4,6 +4,7 @@ import Weather from './components/weather/Weather'
 const App = () => {
   return (
     <Weather/>
+    
   )
 }
 
