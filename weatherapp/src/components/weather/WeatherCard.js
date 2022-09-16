@@ -52,7 +52,7 @@ const WeatherCard = ({ tempInfo }) => {
             <span>{temp}&deg;</span>
           </div>
           <div className="description">
-            <div className="weatherCondition">sunny</div>
+            <div className="weatherCondition">{weathermood}</div>
             <div className="place">{name},{country}</div>
           </div>
         </div>
