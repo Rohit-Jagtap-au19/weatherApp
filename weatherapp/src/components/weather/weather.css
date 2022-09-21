@@ -15,7 +15,7 @@
   --color-light: #fff;
   --color-brand: #57bd84;
   --font-fam: "Lato", sans-serif;
-  --height: 5rem;
+  --height: 6rem;
   --btn-width: 6rem;
   --bez: cubic-bezier(0, 0, 0.43, 1.49);
 }
@@ -140,6 +140,7 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-top: 3rem;
 }
 
 .searchTerm {
@@ -181,4 +182,76 @@ body {
   text-align: center;
   margin-top: -150px;
   margin-bottom: 50px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+/* .wrap {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+@media (max-width:375px) {
+ 
+  .search{
+    width: 100%;
+  }
+  .searchTerm{
+    width: 80%;
+  }
+  .widget{
+    width: 325px;
+    height: calc(100vh - 80vh);
+    display: flex;
+    margin-bottom: 180px;
+  }
+  .widget .weatherIcon{
+    font-size: 40px;
+    padding: 10px;
+  }
+  .widget .weatherInfo{
+    display: inline-block;
+    padding: 40px 20px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .widget .date{
+    flex: 1 0 30%;
+    height: 30%;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .widget .extra-temp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .widget .temp-info-minmax{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .widget .weather-extra-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .two-sided-section{
+    align-items: center;
+    padding: 20px;
+    display: inline-block;
+    flex-direction: column;
+    margin: 5px;
+  }
+ 
 }
